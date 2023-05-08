@@ -19,7 +19,7 @@ renderer.setClearColor(0x000000, 0);
 renderer.setSize(window.innerWidth*0.70, window.innerHeight*0.70);
 
 const camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 0.1, 1000);
-camera.position.set(-9.19, 4.74, 4.57); // x, y, z
+camera.position.set(-9.19, 700, 0); // x, y, z
 
 const mtlLoader = new MTLLoader();
 mtlLoader.setPath('./assets/');
@@ -30,6 +30,7 @@ mtlLoader.load('./test.mtl', (materials) => {
   objLoader.setPath('assets/');
   objLoader.load('./test.obj', (object) => {
     object.position.set(0, 0, 0);
+  object.rotation.y = Math.PI/180 * 90;
     scene.add(object);
     camera.lookAt(new THREE.Vector3(-10, 8.56, -4.6850)); 
   });
