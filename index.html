@@ -5,33 +5,42 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ImmoDrones</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Major+Mono+Display">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue">
     
   </head>
   <body>
+    <div id="loading-screen">
+      <div id="loading-text">Chargement en cours...&#128268;</div>
+    </div>
     <div class="navbar">
       <div class="title">ImmoDrones</div>
     </div>
 
     <div class="container">
-    <div class="headone">Découvrez la Villa Aufort</div>
+    <div class="headone">Découvrez la <strong>Villa Aufort</strong></div>
 
-    <div class="rectangle"></div>
-    
-    <video title="Wildlife" preload="auto" muted  autoplay  class="video">
+    <canvas id ="bg"></canvas> 
+
+
+    <div id="headtwo" class="headtwo">La Villa Aufort est une maison de 250 m<sup>2</sup> située au Mesnil Le Roi. Au milieu de la fôret domainiale, le climat y est paisible. Dotée d'un jardin de 400 m<sup>2</sup>, l'été saura vous faire apprécier votre achat. Non sans négliger le terrain de foot voisin pour des week ends sportifs.</div>
+
+    <video title="real foutage" preload="auto" muted  autoplay  class="video">
       <!-- controls muted autoplay  volume="0.2" width="100%" height="auto" <p>Wildlife</p>-->
       <source src="assets/video.mp4" type="video/mp4">
     </video>
 
-    <div id="headtwo" class="headtwo">La Villa Aufort est une maison de 250 m<sup>2</sup><br> située au Mesnil Le Roi. Au milieu de la fôret domainiale, le climat y est paisible.</div>
+    <br>
 
-    <div class="circle"></div>
-    <canvas id ="bg"></canvas> 
+    <video title="Wildlife" preload="auto" muted  autoplay  class="video">
+      <!-- controls muted autoplay  volume="0.2" width="100%" height="auto" <p>Wildlife</p>-->
+      <source src="assets/video2.mp4" type="video/mp4">
+    </video>
 
+    
 
     <div class="headthree"><a href="#">En savoir plus</a></div>
     </div>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/main_class.js"></script>
   </body>
 </html>
