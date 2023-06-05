@@ -9,7 +9,8 @@ lerna-debug.log*
 
 dist
 dist/
-
+node_modules
+node_modules/
 node_modules/*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
